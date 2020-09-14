@@ -102,25 +102,14 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
     - pdr
     - pdr
     - pdr
+  - containers/
+  - layouts/
+    - layout.jsx
+  - screens/
   - services/
-    - pdr
-- pdr
-- pdr
-- pdr
-
-``` structure
-
-src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
-
-```
+    - api-config.js
+    - auth.js
+    
 
 #### Component Breakdown
 

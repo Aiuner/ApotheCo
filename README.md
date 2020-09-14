@@ -1,7 +1,5 @@
 # ApotheCo <!-- omit in toc -->
 
-> The Project Planning section **should be completed** for your project pitch with instructors.
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)

@@ -93,6 +93,21 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
+#### Font-End Structure
+- src/
+  - assets/
+  - components/
+    - pdr
+    - pdr
+    - pdr
+    - pdr
+    - pdr
+  - services/
+    - pdr
+- pdr
+- pdr
+- pdr
+
 ``` structure
 
 src

@@ -36,7 +36,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ### Goals
 
-- _Ruby on Rails back-end. RESTful JSON API with a Postgres database that has tables for users, articles, and suggested edits/comments. _
+- _Ruby on Rails back-end. RESTful JSON API with a Postgres database that has tables for users, articles, and suggested edits/comments._
 - _Full CRUD for articles and suggested edits/comments._
 - _React.js front-end with full CRUD for articles and suggested edits/comments._
 - _Make API calls from my front-end to my back-end to populate app with data from my database._
@@ -53,6 +53,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
 |      Axios       | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Postgres     | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
 
@@ -146,7 +147,10 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- _Figure out how to write & save articles using markdown or bbcode formatting._
+- _If I successfully figure out the above, figure out a way to preview before submitting._
+- _Separate suggested edits from comments and allow users to mark where in the article a suggested edit should go._
+- _Add an image uploading feature for articles & user profile photos._
 
 ***
 

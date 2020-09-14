@@ -97,15 +97,22 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 - src/
   - assets/
   - components/
-    - pdr
-    - pdr
+    - ArticleTab.jsx
+    - CommentsTab.jsx
     - pdr
     - pdr
     - pdr
   - containers/
   - layouts/
-    - layout.jsx
+    - Layout.jsx
   - screens/
+    - Home.jsx
+    - ArticleList.jsx
+    - Article.jsx
+    - CreateArticle.jsx
+    - EditArticle.jsx
+    - Login.jsx
+    - Register.jsx
   - services/
     - api-config.js
     - auth.js
@@ -149,6 +156,8 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ## Post-MVP
 
+- _Two selectable themes. One Light, one Dark._
+- _Ability to search by either scientific name or common name for plants/fungi._
 - _Figure out how to write & save articles using markdown or bbcode formatting._
 - _If I successfully figure out the above, figure out a way to preview before submitting._
 - _Separate suggested edits from comments and allow users to mark where in the article a suggested edit should go._

@@ -84,9 +84,30 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 
 - Mobile Navigation Menu
 
+<br>
+
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+> Layout is the wrapper for all other components.
+
+Layout < Home
+       < Navigation < CurrentUser 
+                    < CreateArticle < CreateNewArticle
+
+Layout < ViewArticle < Article Container < ArticleTab  < EditArticle < ArticleEditor
+                                         < CommentsTab < CreateNewComment
+                                                       < CommentEditor
+       < Navigation < CurrentUser 
+                    < CreateArticle < CreateNewArticle
+
+Layout < Login
+       < Register
+
+Layout < Index
+       < Navigation < CurrentUser 
+                    < CreateArticle < CreateNewArticle
+                    
+<br>
 
 #### Component Hierarchy
 
@@ -101,14 +122,17 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
     - CommentsTab.jsx
     - ArticleEditor.jsx
     - Navigation.jsx
-    - pdr
+    - CreateNewArticle.jsx
+    - CreateNewComment.jsx
+    - CommentEditor.jsx
+    - CurrentUser.jsx
   - containers/
     - ArticleContainer.jsx
   - layouts/
     - Layout.jsx
   - screens/
     - Home.jsx
-    - ArticleList.jsx
+    - Index.jsx
     - ViewArticle.jsx
     - CreateArticle.jsx
     - EditArticle.jsx
@@ -118,7 +142,8 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
     - api-config.js
     - auth.js
     - articles.js
-    
+
+<br>
 
 #### Component Breakdown
 
@@ -129,6 +154,8 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 |   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
 | Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
 |    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+
+<br>
 
 #### Time Estimates
 

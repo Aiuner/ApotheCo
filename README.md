@@ -42,14 +42,11 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-|      Axios       | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Postgres     | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _A Javascript framework and library used to quickly build responsive single-page web applications._ |
+|   React Router   | _Used to allow react applications to have different components render different React components to the page based on the url pathname._ |
+|      Axios       | _Used to interact with APIs and fetch data from their respective databases._ |
 
 <br>
 

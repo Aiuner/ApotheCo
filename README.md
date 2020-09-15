@@ -88,24 +88,8 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 
 > Layout is the wrapper for all other components.
 
-```
-Layout < Home
-       < Navigation < CurrentUser 
-                    < CreateArticle < CreateNewArticle
+![ApotheCo Component Tree](https://media.discordapp.net/attachments/447199538105810945/755467841314095154/a87bf330-b0f8-45b6-9cde-5bdf81b2069d.png?width=1574&height=908)
 
-Layout < ViewArticle < Article Container < ArticleTab  < EditArticle < ArticleEditor
-                                         < CommentsTab < CreateNewComment
-                                                       < CommentEditor
-       < Navigation < CurrentUser 
-                    < CreateArticle < CreateNewArticle
-
-Layout < Login
-       < Register
-
-Layout < Index
-       < Navigation < CurrentUser 
-                    < CreateArticle < CreateNewArticle
-```
 
 #### Component Hierarchy
 

@@ -144,9 +144,9 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Build out the back-end           |    H     |     5 hrs      |     - hrs     |    - hrs    |
-| Create CRUD Actions on back-end  |    H     |     3 hrs      |     - hrs     |     TBD     |
-| Create User authentication       |    H     |     3 hrs      |               |             |
+| Build out the back-end           |    H     |     5 hrs      |     <1 hr     |    -----    |
+| Create CRUD Actions on back-end  |    H     |     3 hrs      |     <1 hr     |    -----    |
+| Create User authentication       |    H     |     3 hrs      |     <1 hr     |     1 hr    |
 | Debugging back-end               |    M     |     3 hrs      |               |             |
 | Build out the front-end skeleton |    H     |     5 hrs      |               |             |
 | Create CRUD axios functions      |    H     |     3 hrs      |               |             |

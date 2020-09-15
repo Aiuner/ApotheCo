@@ -90,6 +90,7 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 
 > Layout is the wrapper for all other components.
 
+```
 Layout < Home
        < Navigation < CurrentUser 
                     < CreateArticle < CreateNewArticle
@@ -106,8 +107,7 @@ Layout < Login
 Layout < Index
        < Navigation < CurrentUser 
                     < CreateArticle < CreateNewArticle
-                    
-<br>
+```
 
 #### Component Hierarchy
 

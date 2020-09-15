@@ -26,9 +26,7 @@ _**ApotheCo** is an informational wiki containing a growing collection of articl
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **ApotheCo** MVP is to have a functional full-stack web application with a Postgres database serving data to the client-side via axios calls, and a simple and attractive user interface. The application will also feature user authentication, allowing individuals to have accounts with which to create and edit new articles and post comments on other articles._
 
 <br>
 
@@ -93,22 +91,24 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
-#### Font-End Structure
+**Font-End Structure**
+
 - src/
   - assets/
   - components/
     - ArticleTab.jsx
     - CommentsTab.jsx
-    - pdr
+    - ArticleEditor.jsx
     - pdr
     - pdr
   - containers/
+    - ArticleContainer.jsx
   - layouts/
     - Layout.jsx
   - screens/
     - Home.jsx
     - ArticleList.jsx
-    - Article.jsx
+    - ViewArticle.jsx
     - CreateArticle.jsx
     - EditArticle.jsx
     - Login.jsx
@@ -116,11 +116,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
   - services/
     - api-config.js
     - auth.js
+    - articles.js
     
 
 #### Component Breakdown
-
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
@@ -132,15 +131,11 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 

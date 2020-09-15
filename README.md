@@ -171,7 +171,7 @@ Layout < Index
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![ApotheCo ERD Model](https://media.discordapp.net/attachments/447199538105810945/755244325675335750/ApotheCo_ERD.png)
 
 <br>
 

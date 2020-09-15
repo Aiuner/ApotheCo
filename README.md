@@ -54,8 +54,6 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
 ![Homepage](https://media.discordapp.net/attachments/447199538105810945/755227919676211200/unknown.png)
 
 - Desktop Homepage
@@ -111,8 +109,6 @@ Layout < Index
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 **Font-End Structure**
 
 - src/
@@ -149,11 +145,14 @@ Layout < Index
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+| ArticlesTab      | functional |   y   |   n   | _Contains the article information when active._               |
+| CommentsTab      | functional |   y   |   n   | _Displays all the comments when active, plus the new comment field._       |
+| ArticleEditor    | functional |   n   |   n   | _Allows the user to edit an existing article and save the changes to the database._      |
+| Navigation       | functional |   n   |   n   | _Navigation menu. Used to navigate the application._                 |
+| CreateNewArticle | functional |   n   |   n   | _Allows the user to create a new article and save it to the database._ |
+| CreateNewComment | functional |   n   |   n   | _Shows up in the comments tab (CommentsTab subcomponent) and allows the user to submit new comments._      |
+| CommentEditor    | functional |   n   |   n   | _Allows the user to edit an existing comment and save the changes to the database._                 |
+| CurrentUser      | functional |   n   |   y   | _Displays the currently logged in user, or tells a guest to log in or register._ |
 
 <br>
 

@@ -56,29 +56,33 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![Homepage](https://media.discordapp.net/attachments/447199538105810945/755227919676211200/unknown.png)
 
-- Desktop Landing
+- Desktop Homepage
 
-![Dummy Link](url)
+![Dummy Link](https://media.discordapp.net/attachments/447199538105810945/755227983337488394/unknown.png)
 
-- Desktop Hero
+- Log-In Screen
 
-![Dummy Link](url)
+![Dummy Link](https://media.discordapp.net/attachments/447199538105810945/755228076958548088/unknown.png)
 
-- Resource Index
+- Register Screen
 
-![Dummy Link](url)
+![Article Screen](https://media.discordapp.net/attachments/447199538105810945/755228179089588336/unknown.png)
 
-- Resource Show
+- Desktop Article Screen - Article Tab Open
 
-![Dummy Link](url)
+![Article Screen](https://media.discordapp.net/attachments/447199538105810945/755230880129351830/unknown.png)
 
-- Tablet Resource Index
+- Desktop Article Screen - Comments Tab Open
 
-![Dummy Link](url)
+![Mobile Homepage](https://media.discordapp.net/attachments/447199538105810945/755231758936440961/unknown.png)
 
-- Mobile Resource Index
+- Mobile Homepage
+
+![Mobile Navigation Menu](https://media.discordapp.net/attachments/447199538105810945/755233412473815101/unknown.png)
+
+- Mobile Navigation Menu
 
 #### Component Tree
 
@@ -96,7 +100,7 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
     - ArticleTab.jsx
     - CommentsTab.jsx
     - ArticleEditor.jsx
-    - pdr
+    - Navigation.jsx
     - pdr
   - containers/
     - ArticleContainer.jsx

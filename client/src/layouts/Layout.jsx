@@ -5,7 +5,7 @@ export default function Layout(props) {
   return (
     <>
       <header>
-        <h1>Something goes up here.</h1>
+        <h1>ApotheCo</h1>
       </header>
       <main>
         <div className="page-content">
@@ -16,7 +16,7 @@ export default function Layout(props) {
         </div>
       </main>
       <footer>
-        <h1>Something goes down here.</h1>
+        <h1>I'm the footer!</h1>
       </footer>
     </>
   )

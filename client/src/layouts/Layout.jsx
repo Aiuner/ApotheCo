@@ -15,7 +15,9 @@ export default function Layout(props) {
           {props.children}
         </div>
         <div className="nav-panel">
-          <Navigation />
+          <Navigation 
+            currentUser={props.currentUser}
+            handleLogout={props.handleLogout} />
         </div>
       </main>
       <footer>

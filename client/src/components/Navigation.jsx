@@ -1,9 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import './styles/Navigation.css'
+
 export default function Navigation() {
   return (
-    <>
+    <div className="nav">
       <h1>Nav Panel.</h1>
       
       <ul>
@@ -17,6 +19,6 @@ export default function Navigation() {
           <NavLink to="/articles/index">Article Index</NavLink>
         </li>
       </ul>
-    </>
+    </div>
   );
 }

@@ -1,4 +1,7 @@
 import React from 'react';
+
+import Navigation from '../components/Navigation.jsx';
+
 import './Layout.css';
 
 export default function Layout(props) {
@@ -12,7 +15,7 @@ export default function Layout(props) {
           {props.children}
         </div>
         <div className="nav-panel">
-          <h1>Nav Panel.</h1>
+          <Navigation />
         </div>
       </main>
       <footer>

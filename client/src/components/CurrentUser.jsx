@@ -9,13 +9,13 @@ export default function CurrentUser(props) {
       {
         currentUser ?
         <>
-          <img src={currentUser.profile_img} classname="pfp" />
-          <h1 classname="current-user">{currentUser.username}</h1>
+          <img src={currentUser.profile_img} className="pfp" alt="Your Profile Pic"/>
+          <h1 className="current-user">{currentUser.username}</h1>
           <button onClick={handleLogout}>Log Out</button>
         </>
         :
         <>
-          <h1 classname="current-user">Welcome, Guest. Please log in or register.</h1>
+          <h1 className="current-user">Welcome, Guest. Please log in or register.</h1>
           <span><Link to='/login'>Log In</Link>/<Link to='/register'>Register</Link></span>
         </>
       }

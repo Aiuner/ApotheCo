@@ -12,7 +12,7 @@ import Home from './screens/Home.jsx';
 
 import { loginUser, registerUser, verifyUser, removeToken } from './services/auth';
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {

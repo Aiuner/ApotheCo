@@ -33,11 +33,15 @@ export default function Navigation(props) {
         { currentUser &&
           <>
             <li className="page-links">
-              <NavLink to="/404">DummyLink</NavLink>
+              <NavLink to="/404">My Articles</NavLink>
             </li>
-            
+
             <li className="page-links">
-              <NavLink to="/404">DummyLink</NavLink>
+              <NavLink to="/404">My Comments</NavLink>
+            </li>
+
+            <li className="page-links">
+              <NavLink to="/404">Settings</NavLink>
             </li>
           </>}
       </ul>

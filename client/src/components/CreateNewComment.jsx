@@ -21,6 +21,7 @@ export default function CreateNewComment() {
 
   const handleSubmit = async (e, formData) => {
     e.preventDefault();
+    console.log(formData);
     const newComment = await postComment(formData);
     updateComments(newComment);
     // history.push('/articles/:id');

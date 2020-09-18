@@ -21,6 +21,7 @@ export default function CreateArticle() {
 
   const handleSubmit = async (e, formData) => {
     e.preventDefault();
+    console.log(formData);
     const newArticle = await postArticle(formData);
     updateArticles(newArticle);
     history.push(`/articles/${newArticle.id}`);

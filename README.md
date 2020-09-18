@@ -144,15 +144,15 @@ _The **ApotheCo** MVP is to have a functional full-stack web application with a 
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Build out the back-end           |    H     |     5 hrs      |     - hrs     |    - hrs    |
-| Create CRUD Actions on back-end  |    H     |     3 hrs      |     - hrs     |     TBD     |
-| Create User authentication       |    H     |     3 hrs      |               |             |
-| Debugging back-end               |    M     |     3 hrs      |               |             |
-| Build out the front-end skeleton |    H     |     5 hrs      |               |             |
-| Create CRUD axios functions      |    H     |     3 hrs      |               |             |
-| Build up the react components    |    H     |     8 hrs      |               |             |
-| Debugging the front-end          |    M     |     3 hrs      |               |             |
-| Basic CSS Styling                |    H     |     3 hrs      |               |             |
+| Build out the back-end           |    H     |     5 hrs      |     <1 hr     |    -----    |
+| Create CRUD Actions on back-end  |    H     |     3 hrs      |     <1 hr     |    -----    |
+| Create User authentication       |    H     |     3 hrs      |     <1 hr     |     1 hr    |
+| Debugging back-end               |    M     |     3 hrs      |     <1 hr     |    -----    |
+| Build out the front-end skeleton |    H     |     5 hrs      |     <1 hr     |    -----    |
+| Create CRUD axios functions      |    H     |     3 hrs      |     <1 hr     |    2 hrs    |
+| Build up the react components    |    H     |     8 hrs      | WIP 5 hrs     |             |
+| Debugging the front-end          |    M     |     3 hrs      | WIP  1 hr     |             |
+| Basic CSS Styling                |    H     |     3 hrs      |     <1 hr     |             |
 | More Comprehensive CSS Styling   |    M     |     8 hrs      |               |             |
 | Post-MVP                         |    L     |     -----      |               |             |
 | TOTAL                            |          |    52 hrs      |     -----     |     TBD     |

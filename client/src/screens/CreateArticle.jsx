@@ -4,43 +4,33 @@ import { useHistory as history } from 'react-router-dom';
 import { postArticle } from '../services/articles.js';
 
 export default function CreateArticle() {
-  const [articles, setArticles] = useState([]);
-  const [formData, setFormData] = useState({
-    title: "",
-    content: ""
-  })
+  const [articles, updateArticles] = useState([]);
+  const [formData, setFormData] = useState({});
   const { title, content } = formData;
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }))
-  }
-
-  const submitArticle = async (formData) => {
+  const handleSubmit = async (e, formData) => {
+    e.preventDefault();
     const newArticle = await postArticle(formData);
-    setArticles(prevState => [...prevState, newArticle]);
-    history.push('/articles/index')
+    updateArticles(newArticle);
+    history.push('/articles/index');
   }
 
   return (
-    <form onSubmit={submitArticle}>
+    <form onSubmit={handleSubmit}>
       <h1>New Article</h1>
       <label>
         Title:
         <input 
           type="text"
           value={title}
-          onChange={handleChange} />
+          onChange={(e) => setFormData(e.target.value)} />
       </label>
       <label>
         Content:
         <input 
           type="text"
           value={content}
-          onChange={handleChange} />
+          onChange={(e) => setFormData(e.target.value)} />
       </label>
       <button>Submit</button>
     </form>

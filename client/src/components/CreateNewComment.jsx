@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { useHistory as history } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import { postComment } from '../services/comments.js';
 
@@ -10,6 +10,7 @@ export default function CreateNewComment() {
     content: ""
   });
   const { title, content } = formData;
+  const { id } = useParams();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,10 +20,10 @@ export default function CreateNewComment() {
     });
   }
 
-  const handleSubmit = async (e, formData) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
-    const newComment = await postComment(formData);
+    const newComment = await postComment(formData, id);
     updateComments(newComment);
     // history.push('/articles/:id');
   }

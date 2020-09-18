@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :comments
-  resources :articles
+  resources :articles do
+    resources :comments, only: [:create, :index]
+  end
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
   resources :users, only: :create

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory as history } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import { postArticle } from '../services/articles.js';
 
@@ -10,6 +10,7 @@ export default function CreateArticle() {
     content: ""
   });
   const { title, content } = formData;
+  const history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +20,7 @@ export default function CreateArticle() {
     });
   }
 
-  const handleSubmit = async (e, formData) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
     const newArticle = await postArticle(formData);

@@ -1,7 +1,7 @@
 import api from './api-config'
 
-export const getAllComments = async () => {
-  const resp = await api.get('/comments');
+export const getAllComments = async (id) => {
+  const resp = await api.get(`/articles/${id}/comments`);
   return resp.data;
 }
 
@@ -15,8 +15,8 @@ export const updateComment = async (id, formData) => {
   return resp.data;
 }
 
-export const postComment = async (formData) => {
-  const resp = await api.post('/comments', { comment: formData })
+export const postComment = async (formData, id) => {
+  const resp = await api.post(`/articles/${id}/comments`, { comment: formData })
   return resp.data;
 }
 

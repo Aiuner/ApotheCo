@@ -25,7 +25,6 @@ export default function CreateNewComment() {
     console.log(formData);
     const newComment = await postComment(formData, id);
     updateComments(newComment);
-    // history.push('/articles/:id');
   }
 
   return (

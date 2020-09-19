@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import ArticleContainer from '../containers/ArticleContainer.jsx';
+import CommentsTab from '../components/CommentsTab.jsx';
+import ArticleTab from '../components/ArticleTab.jsx';
 
 import { getOneArticle } from '../services/articles.js'
+
+import './styles/ViewArticle.css';
 
 export default function ViewArticle() {
   const [article, setArticle] = useState([]);
@@ -17,11 +20,24 @@ export default function ViewArticle() {
     fetchArticle(id);
   }, []);
 
+  const openTab = (e) => {
+    // trying and failing to translate w3schools article into something usable here
+  }
 
   return (
     <>
-      <h1>This is the article viewing page.</h1>
-      <ArticleContainer article={article} />
+      <div className="tab">
+        <button className="tablinks" onClick={openTab('Article')}>Article</button>
+        <button className="tablinks" onClick={openTab('Comments')}>Comments</button>
+      </div>
+
+      <div id="Article" className="tabcontent">
+        <ArticleTab article={article} />
+      </div>
+
+      <div id="Comments" className="tabcontent">
+        <CommentsTab id={id} />
+      </div>
     </>
   );
 }

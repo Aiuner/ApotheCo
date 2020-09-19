@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import CreateNewComment from '../components/CreateNewComment.jsx';
 
-import { getAllComments } from '../services/comments.js'
-
 export default function CommentsTab(props) {
-  const [comments, setComments] = useState([]);
-  const { id } = props;
-
-  useEffect( () => {
-    const fetchComments = async () => {
-      const allComments = await getAllComments(id);
-      console.log(allComments);
-      setComments(allComments);
-    }
-    fetchComments(id);
-  }, []);
-
+  const { comments, handleSubmit } = props;
 
   return (
     <>
@@ -28,7 +15,7 @@ export default function CommentsTab(props) {
           </div>
         </React.Fragment>
       ))}
-      <CreateNewComment id={id} />
+      <CreateNewComment comments={comments} handleSubmit={handleSubmit} />
     </>
   );
 }

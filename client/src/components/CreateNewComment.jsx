@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
 
-import { postComment } from '../services/comments.js';
-
-export default function CreateNewComment() {
-  const [comments, updateComments] = useState([]);
+export default function CreateNewComment(props) {
   const [formData, setFormData] = useState({
     title: "",
     content: ""
   });
   const { title, content } = formData;
-  const { id } = useParams();
+  const { handleSubmit } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,15 +16,11 @@ export default function CreateNewComment() {
     });
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(formData);
-    const newComment = await postComment(formData, id);
-    updateComments(newComment);
-  }
-
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={(e) => {
+      e.preventDefault();
+      handleSubmit(formData);
+    }}>
       <h1>New Comment</h1>
       <label>Title:</label>
         <input 

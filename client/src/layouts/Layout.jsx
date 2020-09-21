@@ -8,7 +8,8 @@ export default function Layout(props) {
   return (
     <>
       <header>
-        <h1>ApotheCo</h1>
+        <div className="logo-section"><h1 className="name">ApotheCo</h1></div>
+        <div className="hamburger-section"></div>
       </header>
       <main>
         <div className="page-content">

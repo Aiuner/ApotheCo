@@ -30,7 +30,7 @@ export default function ArticleEditor(props) {
 
   return (
     <>
-      <h1>Edit Tab</h1>
+      <h1>Edit "<em>{title}</em>"</h1>
 
       <form onSubmit={editThisArticle}>
         <input
@@ -38,7 +38,7 @@ export default function ArticleEditor(props) {
           type="text"
           value={title}
           placeholder="Article Title"
-          name="Title"
+          name="title"
           onChange={handleChange}
         />
 
@@ -47,7 +47,7 @@ export default function ArticleEditor(props) {
           cols="30"
           rows="6"
           value={content}
-          name="Content"
+          name="content"
           onChange={handleChange}
         />
 

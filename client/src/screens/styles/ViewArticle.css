@@ -1,13 +1,16 @@
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 2px solid #000000;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  background-color: #5E2605;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
+  color: #FFC125;
   float: left;
   border: none;
   outline: none;
@@ -28,7 +31,11 @@
 
 /* Style the tab content */
 .tabcontent {
-  padding: 6px 12px;
-  border: 1px solid #ccc;
+  padding: 0.5vh 2vw;
+  min-height: 70vh;
+  background-color: rgba(94, 38, 5,.75);
+  color: #EDCB62;
   border-top: none;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }

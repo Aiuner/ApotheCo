@@ -6,7 +6,7 @@ export default function CreateNewComment(props) {
     content: ""
   });
   const { title, content } = formData;
-  const { handleSubmit } = props;
+  const { handleSubmitComment } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +19,7 @@ export default function CreateNewComment(props) {
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
-      handleSubmit(formData);
+      handleSubmitComment(formData);
     }}>
       <h1>New Comment</h1>
       <label>Title:</label>

@@ -42,6 +42,13 @@ export default function CreateArticle() {
           type="text"
           value={content}
           onChange={handleChange} />
+        <textarea
+          cols="30"
+          rows="6"
+          value={content}
+          name="Content"
+          onChange={handleChange}
+        />
       <button>Submit</button>
     </form>
   );

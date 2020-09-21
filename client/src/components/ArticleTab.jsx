@@ -5,9 +5,8 @@ export default function ArticleTab (props) {
 
   return (
     <>
-      <h1>Article Tab.</h1>
       <h1 className="article-title">{article.title}</h1>
-      <p>{article.content}</p>
+      <p className="article-content">{article.content}</p>
       <button onClick={() => setTabView("Edit")}>Edit</button>
       <button onClick={deleteThisArticle}>Delete</button>
     </>

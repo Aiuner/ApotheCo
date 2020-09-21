@@ -6,7 +6,6 @@ import Login from './screens/Login.jsx';
 import Register from './screens/Register.jsx';
 import Index from './screens/Index.jsx';
 import CreateArticle from './screens/CreateArticle.jsx';
-import EditArticle from './screens/EditArticle.jsx';
 import ViewArticle from './screens/ViewArticle.jsx';
 import Home from './screens/Home.jsx';
 
@@ -65,10 +64,6 @@ function App() {
 
         <Route path='/articles/new'>
           <CreateArticle />
-        </Route>
-
-        <Route path='/articles/:id/edit'>
-          <EditArticle />
         </Route>
 
         <Route path='/articles/:id'>

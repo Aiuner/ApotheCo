@@ -34,8 +34,7 @@ export default function ViewArticle() {
     setTabView(tab);
   }
 
-  const handleSubmit = async (formData) => {
-    console.log(formData);
+  const handleSubmitComment = async (formData) => {
     const newComment = await postComment(formData, id);
     setComments(prevState => ([...prevState, newComment]));
   }
@@ -65,13 +64,13 @@ export default function ViewArticle() {
 
       { tabView === 'Edit' &&
         <div className="tabcontent">
-          <ArticleEditor editThisArticle={editThisArticle} />
+          <ArticleEditor article={article} editThisArticle={editThisArticle} />
         </div>
       }
 
       { tabView === 'Comments' &&
         <div id="Comments" className="tabcontent">
-          <CommentsTab comments={comments} handleSubmit={handleSubmit} />
+          <CommentsTab comments={comments} handleSubmitComment={handleSubmitComment} />
         </div>
       }
     </>

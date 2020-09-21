@@ -22,28 +22,31 @@ export default function CreateArticle() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
     const newArticle = await postArticle(formData);
     updateArticles(newArticle);
     history.push(`/articles/${newArticle.id}`);
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>New Article</h1>
-      <label>Title:</label>
-        <input 
-          name="title"
-          type="text"
-          value={title}
-          onChange={handleChange} />
-      <label>Content:</label>
-        <input 
-          name="content"
-          type="text"
-          value={content}
-          onChange={handleChange} />
-      <button>Submit</button>
-    </form>
+    <div className="content-panel">
+      <form onSubmit={handleSubmit}>
+        <h1>New Article</h1>
+        <label>Title:</label>
+          <input 
+            name="title"
+            type="text"
+            value={title}
+            onChange={handleChange} />
+        <label>Content:</label>
+          <textarea
+            cols="30"
+            rows="6"
+            value={content}
+            name="Content"
+            onChange={handleChange}
+          />
+        <button>Submit</button>
+      </form>
+    </div>
   );
 }

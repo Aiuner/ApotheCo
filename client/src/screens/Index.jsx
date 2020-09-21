@@ -14,7 +14,7 @@ export default function Index() {
   }, []);
 
   return (
-    <>
+    <div className="content-panel">
       <h1>This is the article index.</h1>
       {articles.map((article) => (<React.Fragment key={article.id}>
           <div className="articles">
@@ -24,6 +24,6 @@ export default function Index() {
           </div>
         </React.Fragment>
       ))}
-    </>
+    </div>
   );
 }

@@ -10,11 +10,12 @@ import { getAllComments, postComment } from '../services/comments.js';
 
 import './styles/ViewArticle.css';
 
-export default function ViewArticle() {
+export default function ViewArticle(props) {
   const [article, setArticle] = useState([]);
   const [tabView, setTabView] = useState('Article');
   const [comments, setComments] = useState([]);
   const { id } = useParams();
+  const { currentUser } = props;
   const history = useHistory();
 
   useEffect( () => {
@@ -58,7 +59,7 @@ export default function ViewArticle() {
 
       { tabView === 'Article' && 
         <div id="Article" className="tabcontent">
-          <ArticleTab article={article} deleteThisArticle={deleteThisArticle} setTabView={setTabView} />
+          <ArticleTab article={article} deleteThisArticle={deleteThisArticle} setTabView={setTabView} currentUser={currentUser} />
         </div>
       }
 
@@ -70,7 +71,7 @@ export default function ViewArticle() {
 
       { tabView === 'Comments' &&
         <div id="Comments" className="tabcontent">
-          <CommentsTab comments={comments} handleSubmitComment={handleSubmitComment} />
+          <CommentsTab comments={comments} handleSubmitComment={handleSubmitComment} currentUser={currentUser} />
         </div>
       }
     </>

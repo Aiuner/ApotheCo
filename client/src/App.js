@@ -67,7 +67,7 @@ function App() {
         </Route>
 
         <Route path='/articles/:id'>
-          <ViewArticle />
+          <ViewArticle currentUser={currentUser} />
         </Route>
 
         <Route path='/'>

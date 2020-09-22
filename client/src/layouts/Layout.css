@@ -26,7 +26,6 @@ header {
   font-family: 'Princess Sofia', cursive;
   line-height: 7vh;
   font-size: 7vh;
-  /* color | offset-x | offset-y | blur-radius */
   text-shadow: #EDCB62 0 0 7px; 
 }
 
@@ -75,4 +74,32 @@ footer {
   text-align: center;
   color: #FFFFFF;
   height: 7vh;
+}
+
+button {
+  background-color: inherit;
+  color: #FFC125;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5vw 1vw;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin-top: 3vh;
+    height: 12vh;
+    display: flex;
+    margin-bottom: 0.5vh;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .name {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0;
+  }
 }

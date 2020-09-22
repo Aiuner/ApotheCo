@@ -22,7 +22,7 @@ export default function Layout(props) {
         </div>
       </main>
       <footer>
-        <h1>I'm the footer!</h1>
+        <p>This is a project by Aiuner, aka Void.</p>
       </footer>
     </>
   )

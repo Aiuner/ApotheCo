@@ -41,7 +41,7 @@ export default function ArticleEditor(props) {
           name="title"
           onChange={handleChange}
         />
-
+        <br />
         <textarea
           className="article-content"
           cols="30"
@@ -50,10 +50,8 @@ export default function ArticleEditor(props) {
           name="content"
           onChange={handleChange}
         />
-
-        <button className="save-button" type="submit">
-          Save Changes
-        </button>
+        <br />
+        <button className="save-button" type="submit">Save Changes</button>
       </form>
     </>
   )

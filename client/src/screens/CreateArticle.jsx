@@ -32,12 +32,15 @@ export default function CreateArticle() {
       <form onSubmit={handleSubmit}>
         <h1>New Article</h1>
         <label>Title:</label>
+        <br />
           <input 
             name="title"
             type="text"
             value={title}
             onChange={handleChange} />
+        <br />
         <label>Content:</label>
+        <br />
           <textarea
             cols="30"
             rows="6"
@@ -45,6 +48,7 @@ export default function CreateArticle() {
             name="Content"
             onChange={handleChange}
           />
+        <br />
         <button>Submit</button>
       </form>
     </div>

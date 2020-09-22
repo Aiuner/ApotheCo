@@ -12,6 +12,14 @@ ul {
   list-style-type: none;
 }
 
+a {
+  color: #7FFF00;
+}
+
+.current-path {
+  color: #EDCB62 !important;
+}
+
 @media screen and (max-width: 600px) {
   .page-links {
     font-size: 3vw;

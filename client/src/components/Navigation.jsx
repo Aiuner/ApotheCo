@@ -16,32 +16,32 @@ export default function Navigation(props) {
 
       <ul>
         <li className="page-links">
-          <NavLink exact to="/">Home</NavLink>
+          <NavLink exact to="/" activeClassName="current-path">Home</NavLink>
         </li>
 
         { currentUser && 
           <>
           <li className="page-links">
-            <NavLink to="/articles/new">New Article</NavLink>
+            <NavLink to="/articles/new" activeClassName="current-path">New Article</NavLink>
           </li>
           </>}
 
         <li className="page-links">
-          <NavLink to="/articles/index">Article Index</NavLink>
+          <NavLink to="/articles/index" activeClassName="current-path">Article Index</NavLink>
         </li>
 
         { currentUser &&
           <>
             <li className="page-links">
-              <NavLink to="/404">My Articles</NavLink>
+              <NavLink to="/404" activeClassName="current-path">My Articles</NavLink>
             </li>
 
             <li className="page-links">
-              <NavLink to="/404">My Comments</NavLink>
+              <NavLink to="/404" activeClassName="current-path">My Comments</NavLink>
             </li>
 
             <li className="page-links">
-              <NavLink to="/404">Settings</NavLink>
+              <NavLink to="/404" activeClassName="current-path">Settings</NavLink>
             </li>
           </>}
       </ul>

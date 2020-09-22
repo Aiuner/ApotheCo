@@ -23,17 +23,25 @@ export default function CreateNewComment(props) {
     }}>
       <h1>New Comment</h1>
       <label>Title:</label>
+      <br />
         <input 
+          className="comment-title"
           name="title"
           type="text"
           value={title}
           onChange={handleChange} />
+      <br />
       <label>Content:</label>
-        <input 
-          name="content"
-          type="text"
+      <br />
+        <textarea
+          className="comment-content"
+          cols="30"
+          rows="6"
           value={content}
-          onChange={handleChange} />
+          name="content"
+          onChange={handleChange}
+        />
+      <br />
       <button>Submit</button>
     </form>
   );

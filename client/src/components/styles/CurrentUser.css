@@ -1,5 +1,12 @@
 .current-user {
   font-size: 40px;
+  color: #002900;
+}
+
+.nav-login-register-logout {
+  color: #002900 !important;
+  border: 2px solid #002900;
+  background-color: rgba(50,79,23,.35)
 }
 
 @media screen and (max-width: 600px) {

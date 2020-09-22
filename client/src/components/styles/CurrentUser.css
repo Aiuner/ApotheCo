@@ -1,0 +1,15 @@
+.current-user {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .current-user {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .current-user {
+    font-size: 5vw;
+  }
+}

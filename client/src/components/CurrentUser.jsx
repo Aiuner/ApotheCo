@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './styles/CurrentUser.css';
+
 export default function CurrentUser(props) {
   const { currentUser, handleLogout } = props;
 
